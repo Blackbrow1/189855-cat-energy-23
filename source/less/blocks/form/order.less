@@ -1,67 +1,54 @@
 .order {
   padding: 27px 20px 32px 20px;
-  font-family: "Oswald";
+  font-family: @font-first;
 
-  & input {
+  input {
     color: @special-dark-gray;
     text-transform: uppercase;
   }
+}
 
-  &__text {
-    margin: 0;
-    font-family: "Oswald";
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    margin-bottom: 39px;
-  }
+.order__text {
+  margin: 0;
+  font-family: @font-first;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
 
-  &__title {
-    margin-bottom: 37px;
-  }
+.order__title {
+  margin-bottom: 37px;
+}
 
-  &__customer-data {
-    .fieldset-clear();
-  }
+.order__customer-data {
+  .fieldset-clear();
+}
 
-  &__program {
-    .fieldset-clear();
-    color: @special-dark-gray-2;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 18px;
-  }
+.order__program {
+  .fieldset-clear();
+  color: @special-dark-gray-2;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
 
-  &__contacts {
-    .fieldset-clear();
-  }
+.order__contacts {
+  .fieldset-clear();
+}
 
-  &__comment {
-    .fieldset-clear();
-  }
+.order__more {
+  .fieldset-clear();
+}
 
-  &__more {
-    .fieldset-clear();
-  }
+.order__contacts-title {
+  font-size: 24px;
+  line-height: 26px;
+}
 
-  &__contacts-title {
-    font-size: 24px;
-    line-height: 26px;
-  }
-
-  & .input-text {
-    color: @special-dark-gray;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  & .title-line {
-    font-size: 24px;
-    line-height: 26px;
-  }
-
-  &__comment textarea {
+.order__comment {
+  .fieldset-clear();
+  textarea {
     width: 278px;
     height: 148px;
     color: @special-dark-gray;
@@ -69,19 +56,12 @@
     font-size: 16px;
     line-height: 18px;
     resize: none;
+    &::placeholder {
+      color: @special-dark-gray;
+    }
   }
+}
 
-  &__comment textarea::placeholder {
-    color: @special-dark-gray;
-  }
-
-  & .choice--check {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
-
-  &__required {
-    font-family: "Arial";
-  }
+.order__required {
+  font-family: @font-second;
 }
