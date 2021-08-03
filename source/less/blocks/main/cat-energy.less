@@ -1,0 +1,25 @@
+.cat-energy {
+  &--tablet {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .cat-energy {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .cat-energy {
+    &--tablet {
+      transform: scale(1.16, 1.16);
+    }
+  }
+}

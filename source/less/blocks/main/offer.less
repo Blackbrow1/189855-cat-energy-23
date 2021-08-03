@@ -1,16 +1,15 @@
 .offer {
-  background: url("../img/cat.jpg") no-repeat 0 0;
+  background: url("../img/cat-mobile.png") no-repeat 50% 50%;
   text-align: center;
-
-  &--color {
-    background-color: @overlay-green;
-    min-height: 302px;
-  }
+  min-height: 302px;
+  margin-bottom: 200px;
 }
 
 .offer__wrapper {
   padding-top: 27px;
   box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .offer__call {
@@ -32,4 +31,28 @@
   line-height: 18px;
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .offer {
+    background: none;
+    text-align: left;
+    margin-bottom: 526px;
+
+    &--color {
+      background-color: @basic-white;
+      padding-top: 0;
+    }
+  }
+
+  .offer__wrapper {
+    width: 534px;
+  }
+
+  .offer__call {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-black;
+    margin-bottom: 49px;
+  }
 }
