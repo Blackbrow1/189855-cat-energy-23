@@ -1,25 +1,19 @@
-.cat-energy {
-  &--tablet {
-    display: none;
-  }
+.cat-energy__desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .cat-energy {
-    &--tablet {
-      display: block;
-    }
+  .cat-energy__mobile {
+    display: none;
+  }
 
-    &--mobile {
-      display: none;
-    }
+  .cat-energy__desktop {
+    display: block;
   }
 }
 
-@media (min-width: @desctop-width) {
-  .cat-energy {
-    &--tablet {
-      transform: scale(1.16, 1.16);
-    }
+@media (min-width: @desktop-width) {
+  .cat-energy__desktop {
+    transform: scale(1.16);
   }
 }

@@ -2,7 +2,6 @@
   background: url("../img/cat-mobile.png") no-repeat 50% 50%;
   text-align: center;
   min-height: 302px;
-  margin-bottom: 200px;
 }
 
 .offer__wrapper {
@@ -37,7 +36,24 @@
   .offer {
     background: none;
     text-align: left;
-    margin-bottom: 526px;
+    width: 414px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 709px;
+      height: 609px;
+      background-image: url("../img/index-can.png");
+      background-repeat: no-repeat;
+      z-index: 2;
+      left: 0;
+      top: 200px;
+    }
+  }
+
+  .offer__wrapper {
+    width: 534px;
 
     &--color {
       background-color: @basic-white;
@@ -45,14 +61,35 @@
     }
   }
 
-  .offer__wrapper {
-    width: 534px;
-  }
-
   .offer__call {
     font-size: 20px;
     line-height: 20px;
     color: @basic-black;
     margin-bottom: 49px;
+  }
+
+  .offer__button {
+    position: relative;
+    margin-bottom: 0;
+    z-index: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer {
+    width: 414px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 552px;
+      height: 449px;
+      background-image: url("../img/index-can.png");
+      background-repeat: no-repeat;
+      z-index: 2;
+      left: 390px;
+      top: -70px;
+    }
   }
 }

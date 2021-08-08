@@ -6,9 +6,6 @@
 
 .steps__list {
   .clear-list();
-
-  display: flex;
-  flex-direction: column;
 }
 
 .steps__title {
@@ -37,6 +34,7 @@
   }
 
   .steps__list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -55,7 +53,7 @@
   }
 }
 
-@media (min-width: @desctop-width) {
+@media (min-width: @desktop-width) {
   .steps__wrapper {
     width: 1220px;
 
