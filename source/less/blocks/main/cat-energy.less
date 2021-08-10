@@ -1,0 +1,19 @@
+.cat-energy__desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-energy__mobile {
+    display: none;
+  }
+
+  .cat-energy__desktop {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-energy__desktop {
+    transform: scale(1.16);
+  }
+}

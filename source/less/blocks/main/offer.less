@@ -1,16 +1,14 @@
 .offer {
-  background: url("../img/cat.jpg") no-repeat 0 0;
+  background: url("../img/cat-mobile.png") no-repeat 50% 50%;
   text-align: center;
-
-  &--color {
-    background-color: @overlay-green;
-    min-height: 302px;
-  }
+  min-height: 302px;
 }
 
 .offer__wrapper {
   padding-top: 27px;
   box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .offer__call {
@@ -32,4 +30,66 @@
   line-height: 18px;
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .offer {
+    background: none;
+    text-align: left;
+    width: 414px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 709px;
+      height: 609px;
+      background-image: url("../img/index-can.png");
+      background-repeat: no-repeat;
+      z-index: 2;
+      left: 0;
+      top: 200px;
+    }
+  }
+
+  .offer__wrapper {
+    width: 534px;
+
+    &--color {
+      background-color: @basic-white;
+      padding-top: 0;
+    }
+  }
+
+  .offer__call {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic-black;
+    margin-bottom: 49px;
+  }
+
+  .offer__button {
+    position: relative;
+    margin-bottom: 0;
+    z-index: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer {
+    width: 414px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 552px;
+      height: 449px;
+      background-image: url("../img/index-can.png");
+      background-repeat: no-repeat;
+      z-index: 2;
+      left: 390px;
+      top: -70px;
+    }
+  }
 }

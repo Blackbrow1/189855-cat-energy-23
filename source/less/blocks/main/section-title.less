@@ -1,6 +1,15 @@
 .section-title {
   font-size: 36px;
-  color: @basic-black;
   font-weight: 400;
   font-family: @font-first;
+}
+
+@media (min-width: @tablet-width) {
+  .section-title {
+    color: @basic-black;
+    line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 41px;
+    font-size: 60px;
+  }
 }
