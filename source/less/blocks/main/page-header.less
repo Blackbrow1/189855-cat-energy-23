@@ -4,13 +4,25 @@
 
 .page-header__wrapper {
   width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+.page-header__offer-wrap {
+  margin: 0 auto;
+  margin-top: 138px;
+  width: 280px;
+  padding: 0 20px;
 }
 
 .page-header__line {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-header__offer {
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
@@ -25,7 +37,8 @@
 
   .page-header__wrapper {
     margin-bottom: 62px;
-    width: 709px;
+    width: 708px;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,6 +53,15 @@
     width: 768px;
     box-sizing: border-box;
   }
+
+  .page-header__offer-wrap {
+    margin-left: 0;
+    padding: 0;
+    position: relative;
+    top: -90px;
+    margin-bottom: 0;
+    z-index: 2;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -48,12 +70,14 @@
     height: 643px;
     position: relative;
     margin-bottom: 82px;
+    background-size: cover;
 
     &::after {
       content: "";
       position: absolute;
       width: 50%;
       height: 100%;
+      background-size: cover;
       background-image: url("../img/cat-desktop.png");
       background-repeat: no-repeat;
       top: 0;

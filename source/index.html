@@ -67,6 +67,7 @@
             </div>
             <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
+
           <nav class="main-nav page-header__nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -82,10 +83,14 @@
           </nav>
         </div>
 
-        <section class="offer page-header__offer">
-          <div class="offer__wrapper offer__wrapper--color">
-            <h1 class="section-title offer__title">Функциональное питание для котов</h1>
-            <p class="offer__call">Занялся собой? Займись котом!</p>
+        <section class="page-header__offer">
+          <div class="offer">
+            <div class="offer__wrapper offer__wrapper--color">
+              <h1 class="section-title offer__title">Функциональное питание для котов</h1>
+              <p class="offer__call">Занялся собой? Займись котом!</p>
+            </div>
+          </div>
+          <div class="page-header__offer-wrap">
             <a class="button offer__button" href="#">Подобрать программу</a>
           </div>
         </section>
@@ -178,9 +183,11 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__address contacts__wrapper">
-          <p class="contacts__cta">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address-item">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__container">
+          <div class="contacts__address contacts__wrapper">
+            <p class="contacts__cta">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__address-item">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         </div>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627157634320!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -190,7 +197,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p>
+        <p class="page-footer__logo">
           <a class="cat-energy page-footer__cat-energy">
             <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.60253 22.0513C0.468358 20.3682 -0.0946573 18.3503 3.016e-05 16.3077V7.79487C-0.137317 5.73031 0.390444 3.67661 1.50238 1.94872C2.6041 0.615385 4.30676 0 6.81067 0C9.31458 0 10.9171 0.615385 11.9187 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.51333V6.46154C8.55297 5.76385 8.45065 5.06533 8.21286 4.41026C8.08576 4.14583 7.88431 3.9264 7.63443 3.78018C7.38455 3.63395 7.09766 3.56763 6.81067 3.58974C6.10958 3.58974 5.60879 3.79487 5.40848 4.30769C5.18191 5.03643 5.08025 5.79984 5.10801 6.5641V17.5385C5.05512 18.2799 5.19327 19.0227 5.50864 19.6923C5.70895 20.2051 6.20973 20.4103 6.91083 20.4103C7.61192 20.4103 8.01255 20.2051 8.21286 19.6923C8.44058 18.9992 8.54242 18.2692 8.51333 17.5385V15.0769H13.421V17.1282C13.5229 18.9651 12.9911 20.7803 11.9187 22.2564C10.9171 23.4872 9.21443 24.1026 6.81067 24.1026C4.40692 24 2.6041 23.3846 1.60253 22.0513Z" fill="#111111"/>
@@ -206,13 +213,18 @@
           </a>
         </p>
 
-        <ul class="social page-footer__social">
-          <li class="social__item"><a href="#">vk</a></li>
-          <li class="social__item"><a href="#">insta</a></li>
-          <li class="social__item"><a href="#">fb</a></li>
-        </ul>
-        <p><a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+        <div class="page-footer__social-container">
+          <ul class="social page-footer__social">
+            <li class="social__item"><a href="#">vk</a></li>
+            <li class="social__item"><a href="#">insta</a></li>
+            <li class="social__item"><a href="#">fb</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__academy-wrap">
+          <p><a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+        </div>
       </div>
     </footer>
+
   </body>
 </html>

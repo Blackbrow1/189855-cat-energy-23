@@ -1,5 +1,6 @@
 .offer {
   background: url("../img/cat-mobile.png") no-repeat 50% 50%;
+  background-color: @cat-offer-bg;
   text-align: center;
   min-height: 302px;
 }
@@ -9,6 +10,18 @@
   box-sizing: border-box;
   width: 280px;
   margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 270px;
+    background-image: url("../img/index-can-mobile.png");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 167px;
+  }
 }
 
 .offer__call {
@@ -23,6 +36,7 @@
   color: @basic-white;
   line-height: 36px;
   margin-bottom: 25px;
+  margin-top: 0;
 }
 
 .offer__button {
@@ -30,6 +44,7 @@
   line-height: 18px;
   padding-top: 11px;
   padding-bottom: 11px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -37,23 +52,23 @@
     background: none;
     text-align: left;
     width: 414px;
-    position: relative;
+    min-height: 181px;
+  }
+
+  .offer__wrapper {
+    width: 534px;
 
     &::before {
       content: "";
       position: absolute;
       width: 709px;
       height: 609px;
-      background-image: url("../img/index-can.png");
+      background-image: url("../img/index-can-tablet.png");
       background-repeat: no-repeat;
       z-index: 2;
-      left: 0;
+      left: -60px;
       top: 200px;
     }
-  }
-
-  .offer__wrapper {
-    width: 534px;
 
     &--color {
       background-color: @basic-white;
@@ -67,19 +82,14 @@
     color: @basic-black;
     margin-bottom: 49px;
   }
-
-  .offer__button {
-    position: relative;
-    margin-bottom: 0;
-    z-index: 2;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .offer {
     width: 414px;
-    position: relative;
+  }
 
+  .offer__wrapper {
     &::before {
       content: "";
       position: absolute;
