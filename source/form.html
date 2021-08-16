@@ -67,22 +67,25 @@
               </svg>
             </a>
           </div>
-          <button class="page-header-noindex__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="page-header__toggle page-header__toggle--open" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
         </div>
       </div>
-      <nav class="main-nav page-header-noindex__nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item-noindex site-list__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item-noindex">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item site-list__item-noindex">
-            <a>Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+
+      <div class="page-header__nav-container page-header__nav-container--close">
+        <nav class="main-nav main-nav--active page-header__nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item-noindex">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item-noindex">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item-noindex site-list__item--active site-list__item-noindex--active">
+              <a>Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
     </header>
 
@@ -249,5 +252,6 @@
       </div>
     </footer>
 
+    <script src="../js/main-menu.js"></script>
   </body>
 </html>

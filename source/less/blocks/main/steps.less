@@ -17,6 +17,62 @@
 .steps__item {
   color: @special-dark-gray;
   line-height: 18px;
+  padding-left: 80px;
+  min-height: 60px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--leaf {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -3px;
+      left: 0;
+      background-image: url("../img/steps/leaf_mobile.svg");
+    }
+  }
+
+  &--tub {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -3px;
+      left: 0;
+      background-image: url("../img/steps/tub_mobile.svg");
+    }
+  }
+
+  &--eat {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -3px;
+      left: 0;
+      background-image: url("../img/steps/eat_mobile.svg");
+    }
+  }
+
+  &--alarm {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -3px;
+      left: 0;
+      background-image: url("../img/steps/alarm_mobile.svg");
+    }
+  }
 }
 
 .steps__wrapper {
