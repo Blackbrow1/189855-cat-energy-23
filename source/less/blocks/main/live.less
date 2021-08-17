@@ -2,6 +2,8 @@
   font-size: 14px;
   line-height: 18px;
   color: @special-dark-gray;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .live__price {
@@ -11,18 +13,19 @@
   text-transform: uppercase;
   margin: 0;
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 42px;
 }
 
 .live {
   background-color: @background-live;
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 31px;
 }
 
 .live__title {
   margin: 0;
   margin-bottom: 33px;
+  line-height: 40px;
 }
 
 .live__wrapper {
@@ -35,7 +38,7 @@
   .clear-list();
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 }
 
 .live__list-item {
@@ -68,7 +71,18 @@
 }
 
 .live__img {
-  margin-bottom: 34px;
+  margin-bottom: 27px;
+}
+
+.live__was,
+.live__become {
+  border: none;
+  background-color: transparent;
+  font-family: @font-first;
+  font-size: 16px;
+  line-height: 20px;
+  color: @basic-black;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
@@ -84,6 +98,8 @@
 
   .live {
     background-color: @basic-white;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .live__wrap {
@@ -124,9 +140,17 @@
     font-size: 14px;
     line-height: 14px;
     background-color: @basic-white;
-    width: max-content;
     border: none;
     top: 65px;
+  }
+
+  .live__border-text-weight {
+    width: 121px;
+  }
+
+  .live__border-text-time {
+    width: 142px;
+    left: 9px;
   }
 
   .live__list-wrapper {
@@ -154,9 +178,17 @@
 
   .live__slider {
     position: relative;
-    z-index: 2;
-    top: 105px;
-    left: 191px;
+    top: 110px;
+    left: 80px;
+  }
+
+  .live__range {
+    width: 428px;
+  }
+
+  .live__was,
+  .live__become {
+    font-size: 20px;
   }
 }
 
@@ -213,16 +245,18 @@
 
   .live__img {
     position: absolute;
-    top: -194px;
-    left: 0;
+    top: -110px;
+    left: -50px;
     transform: scale(2.18);
+    margin-bottom: 0;
   }
 
   .live__slider {
     position: relative;
     z-index: 2;
-    top: 0;
-    left: 0;
+    top: -60px;
+    left: -120px;
+    width: 579px;
   }
 
   .live__text {
@@ -238,6 +272,9 @@
 
   .live__price {
     width: 327px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .live__border-text {

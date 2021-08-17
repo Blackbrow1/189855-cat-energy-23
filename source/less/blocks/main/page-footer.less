@@ -35,23 +35,17 @@
 .page-footer__academy-wrap {
   width: 280px;
   display: flex;
-  justify-content: flex-start;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 34px;
-    background: url("../img/logo_html.svg") no-repeat 0 0;
-    right: 0;
-    top: 15px;
-  }
+  justify-content: space-between;
+  align-items: center;
 
   p {
     margin-top: 22px;
     margin-bottom: 22px;
   }
+}
+
+.page-footer__icon-fb {
+  fill: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -85,6 +79,12 @@
     &::before {
       top: -7px;
     }
+  }
+
+  .page-footer__icon-vk,
+  .page-footer__icon-insta,
+  .page-footer__icon-fb {
+    transform: scale(1.3);
   }
 }
 

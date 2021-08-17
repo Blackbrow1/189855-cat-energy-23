@@ -81,12 +81,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .speps {
-    margin-bottom: 47px;
+  .steps {
+    margin-bottom: 43px;
+    padding-bottom: 104px;
+    border-bottom: 1px solid @main-nav-border-item;
   }
 
   .steps__title {
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 
   .steps__list {
@@ -100,23 +102,150 @@
   }
 
   .steps__item {
-    width: 230px;
-    min-height: 280px;
+    padding-left: 0;
+    padding-top: 111px;
+    font-size: 16px;
+    line-height: 24px;
 
-    &:not(:nth-child(2n)) {
-      margin-right: 153px;
+    &--leaf,
+    &--tube {
+      margin-bottom: 134px;
+    }
+
+    &--leaf {
+      width: 230px;
+      margin-right: 137px;
+
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/steps/leaf_tablet.svg");
+      }
+
+      &::after {
+        content: "1";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        font-family: @font-first;
+        color: @basic-gray;
+        width: 112px;
+        height: 280px;
+        top: -40px;
+        right: 0;
+        z-index: -1;
+      }
+    }
+
+    &--tub {
+      width: 246px;
+
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/steps/tub_tablet.svg");
+      }
+
+      &::after {
+        content: "2";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        font-family: @font-first;
+        color: @basic-gray;
+        width: 134px;
+        height: 280px;
+        top: -40px;
+        right: 0;
+        z-index: -1;
+      }
+    }
+
+    &--eat {
+      width: 247px;
+      margin-bottom: 0;
+      margin-right: 137px;
+
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/steps/eat_tablet.svg");
+      }
+
+      &::after {
+        content: "3";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        font-family: @font-first;
+        color: @basic-gray;
+        width: 134px;
+        height: 280px;
+        top: -40px;
+        right: 0;
+        z-index: -1;
+      }
+    }
+
+    &--alarm {
+      width: 249px;
+
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/steps/alarm_tablet.svg");
+      }
+
+      &::after {
+        content: "4";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        font-family: @font-first;
+        color: @basic-gray;
+        width: 136px;
+        height: 280px;
+        top: -40px;
+        right: -3px;
+        z-index: -1;
+      }
     }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .steps {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 126px;
+  }
+
   .steps__wrapper {
     width: 1220px;
+  }
 
-    .steps__item {
-      &:not(:nth-child(4)) {
-        margin-right: 94px;
-      }
+  .steps__item {
+    margin-bottom: 0;
+
+    &--leaf {
+      margin-right: 92px;
+      margin-bottom: 0;
+    }
+
+    &--tub {
+      margin-right: 79px;
+    }
+
+    &--eat {
+      margin-right: 77px;
     }
   }
 }

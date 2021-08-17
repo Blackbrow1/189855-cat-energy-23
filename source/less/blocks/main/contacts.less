@@ -37,7 +37,7 @@
 }
 
 .contacts__container {
-  background-color: @footer-color;
+  background-color: @basic-white;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,11 +56,17 @@
 
   .contacts__cta {
     width: 171px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .contacts__address-item {
     width: 159px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 75px;
   }
 
   .contacts__address {
