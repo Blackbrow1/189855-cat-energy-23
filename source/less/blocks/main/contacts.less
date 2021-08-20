@@ -4,6 +4,7 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  width: 140px;
 }
 
 .contacts__wrapper {
@@ -27,12 +28,14 @@
   line-height: 20px;
   color: @special-dark-gray;
   margin: 0;
+  width: 140px;
 }
 
 .contacts__map {
   iframe {
     width: 100%;
     height: 362px;
+    display: block;
   }
 }
 
@@ -50,8 +53,8 @@
 
   .contacts__wrapper {
     width: 625px;
-    padding-top: 65px;
-    padding-bottom: 61px;
+    padding-top: 63px;
+    padding-bottom: 59px;
   }
 
   .contacts__cta {
@@ -66,7 +69,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 75px;
+    min-height: 80px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .contacts__address {
@@ -94,7 +99,14 @@
     box-sizing: border-box;
     background-color: @basic-white;
     position: absolute;
-    left: 110px;
+    // left: 110px;
     top: 95px;
+    left: 50%;
+    transform: translateX(-610px);
+  }
+
+  .contacts__address-item {
+    text-align: left;
+    width: 156px;
   }
 }

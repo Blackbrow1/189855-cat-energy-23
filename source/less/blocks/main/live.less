@@ -4,6 +4,10 @@
   color: @special-dark-gray;
   margin-top: 0;
   margin-bottom: 25px;
+
+  br {
+    display: none;
+  }
 }
 
 .live__price {
@@ -19,7 +23,7 @@
 .live {
   background-color: @background-live;
   padding-top: 27px;
-  padding-bottom: 31px;
+  padding-bottom: 36px;
 }
 
 .live__title {
@@ -43,8 +47,8 @@
 
 .live__list-item {
   width: 122px;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   border: 1px solid @special-gray;
   border-radius: 3px;
   font-family: @font-first;
@@ -52,6 +56,10 @@
   line-height: 24px;
   text-align: center;
   position: relative;
+}
+
+.live__indicator {
+  text-transform: uppercase;
 }
 
 .live__border-text {
@@ -72,6 +80,8 @@
 
 .live__img {
   margin-bottom: 27px;
+  position: relative;
+  left: -19px;
 }
 
 .live__was,
@@ -83,6 +93,74 @@
   line-height: 20px;
   color: @basic-black;
   text-transform: uppercase;
+  padding: 0;
+}
+
+.live__slider {
+  width: 198px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: 43px;
+}
+
+.live__range-controls {
+  width: 72px;
+  background-color: @basic-white;
+  border-radius: 6px;
+  border: 1px solid @special-gray;
+  padding: 3px 5px;
+}
+
+.live__bar {
+  width: 40%;
+  height: 6px;
+  background-color: @basic-green;
+  border-radius: 6px;
+}
+
+.live__cat {
+  position: relative;
+  width: 311px;
+  height: 232px;
+  margin-bottom: 32px;
+}
+
+.live__cat-fat {
+  position: absolute;
+  left: -20px;
+  top: -7px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.live__cat-skinny {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 251px;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.live__cat-fat img {
+  position: absolute;
+  width: 311px;
+  height: 232px;
+  top: 0;
+  left: 0;
+}
+
+.cat__skinny img {
+  position: absolute;
+  width: 251px;
+  height: 240px;
+  top: 0;
+  right: 54px;
 }
 
 @media (min-width: @tablet-width) {
@@ -106,7 +184,7 @@
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
-    margin-bottom: 250px;
+    margin-bottom: 221px;
   }
 
   .live__grad {
@@ -118,10 +196,14 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
+
+    br {
+      display: block;
+    }
   }
 
   .live__title {
-    margin-bottom: 63px;
+    margin-bottom: 74px;
   }
 
   .live__list {
@@ -130,8 +212,8 @@
 
   .live__list-item {
     width: 160px;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 19px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -141,7 +223,7 @@
     line-height: 14px;
     background-color: @basic-white;
     border: none;
-    top: 65px;
+    top: 63px;
   }
 
   .live__border-text-weight {
@@ -167,6 +249,8 @@
 
   .live__price-wrapper {
     width: 174px;
+    position: relative;
+    top: 3px;
   }
 
   .live__img {
@@ -178,17 +262,76 @@
 
   .live__slider {
     position: relative;
-    top: 110px;
-    left: 80px;
+    top: -253px;
+    left: 70px;
+    z-index: 3;
+    width: 570px;
   }
 
-  .live__range {
+  .live__range-controls {
+    position: relative;
     width: 428px;
+    height: 6px;
+    padding: 0;
+    border: none;
+    background-color: @border-dashed;
+  }
+
+  .live__bar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    left: 48%;
+    top: -13px;
+    box-shadow: inset 0 0 0 12px @basic-white, inset 0 0 0 16px @basic-green, 0 3px 8px -3px @basic-black;
+    cursor: pointer;
+    border: 1px solid @border-dashed;
   }
 
   .live__was,
   .live__become {
     font-size: 20px;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid @special-gray;
+    border-bottom-style: dashed;
+  }
+
+  .live__cat {
+    width: 708px;
+    height: 620px;
+    margin-bottom: 0;
+    top: -183px;
+  }
+
+  .live__cat-fat {
+    left: 0;
+    top: -8px;
+    width: 354px;
+    height: 100%;
+  }
+
+  .live__cat-skinny {
+    right: 0;
+    top: 0;
+    width: 354px;
+    height: 100%;
+    display: block;
+  }
+
+  .live__cat-fat img {
+    width: 354px;
+    height: 620px;
+    top: 0;
+    left: 0;
+  }
+
+  .live__cat-skinny img {
+    width: 354px;
+    height: 607px;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -204,7 +347,7 @@
   }
 
   .live__title {
-    margin-bottom: 76px;
+    margin-bottom: 86px;
   }
 
   .live__container {
@@ -219,7 +362,7 @@
       top: 0;
       right: 0;
       height: 100%;
-      width: 700px;
+      width: 1150px;
     }
   }
 
@@ -236,6 +379,7 @@
   .live__grad {
     background: none;
     position: relative;
+    height: 392px;
   }
 
   .live__color {
@@ -246,7 +390,7 @@
   .live__img {
     position: absolute;
     top: -110px;
-    left: -50px;
+    left: -30px;
     transform: scale(2.18);
     margin-bottom: 0;
   }
@@ -254,9 +398,17 @@
   .live__slider {
     position: relative;
     z-index: 2;
-    top: -60px;
-    left: -120px;
-    width: 579px;
+    top: -600px;
+    left: -135px;
+    width: 572px;
+  }
+
+  .live__range-controls {
+    top: -3px;
+  }
+
+  .live__bar {
+    left: 47%;
   }
 
   .live__text {
@@ -264,6 +416,12 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 69px;
+    position: relative;
+    z-index: 2;
+
+    br {
+      display: none;
+    }
   }
 
   .live__list-wrapper {
@@ -282,6 +440,42 @@
   }
 
   .live__list {
-    margin-bottom: 60px;
+    margin-bottom: 53px;
+  }
+
+  .live__cat {
+    width: 690px;
+    height: 535px;
+    margin-bottom: 0;
+    top: -625px;
+    right: 213px;
+  }
+
+  .live__cat-fat {
+    left: 0;
+    top: -2px;
+    width: 365px;
+    height: 100%;
+  }
+
+  .live__cat-skinny {
+    right: 0;
+    top: 0;
+    width: 325px;
+    height: 100%;
+  }
+
+  .live__cat-fat img {
+    width: 405px;
+    height: 536px;
+    top: 0;
+    left: 0;
+  }
+
+  .live__cat-skinny img {
+    width: 325px;
+    height: 654px;
+    top: 0;
+    right: 54px;
   }
 }

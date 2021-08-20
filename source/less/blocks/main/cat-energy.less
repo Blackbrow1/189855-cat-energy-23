@@ -2,6 +2,10 @@
   display: none;
 }
 
+.cat-energy__tablet {
+  display: none;
+}
+
 .cat-energy__mobile:hover,
 .cat-energy__mobile:focus,
 .cat-energy__desktop:hover,
@@ -19,13 +23,17 @@
     display: none;
   }
 
-  .cat-energy__desktop {
+  .cat-energy__tablet {
     display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .cat-energy__desktop {
-    transform: scale(1.16);
+    display: block;
+  }
+
+  .cat-energy__tablet {
+    display: none;
   }
 }

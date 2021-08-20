@@ -1,5 +1,5 @@
 .steps {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -21,6 +21,10 @@
   min-height: 60px;
   margin-bottom: 20px;
   position: relative;
+
+  br {
+    display: none;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -82,13 +86,13 @@
 
 @media (min-width: @tablet-width) {
   .steps {
-    margin-bottom: 43px;
+    margin-bottom: 52px;
     padding-bottom: 104px;
     border-bottom: 1px solid @main-nav-border-item;
   }
 
   .steps__title {
-    margin-bottom: 72px;
+    margin-bottom: 83px;
   }
 
   .steps__list {
@@ -107,6 +111,10 @@
     font-size: 16px;
     line-height: 24px;
 
+    br {
+      display: block;
+    }
+
     &--leaf,
     &--tube {
       margin-bottom: 134px;
@@ -114,7 +122,7 @@
 
     &--leaf {
       width: 230px;
-      margin-right: 137px;
+      margin-right: 154px;
 
       &::before {
         width: 80px;
@@ -214,7 +222,7 @@
         width: 136px;
         height: 280px;
         top: -40px;
-        right: -3px;
+        right: -2px;
         z-index: -1;
       }
     }
@@ -225,7 +233,7 @@
   .steps {
     border-bottom: 0;
     padding-bottom: 0;
-    margin-bottom: 126px;
+    margin-bottom: 134px;
   }
 
   .steps__wrapper {
@@ -236,7 +244,7 @@
     margin-bottom: 0;
 
     &--leaf {
-      margin-right: 92px;
+      margin-right: 94px;
       margin-bottom: 0;
     }
 
@@ -246,6 +254,10 @@
 
     &--eat {
       margin-right: 77px;
+    }
+
+    &--alarm {
+      width: 247px;
     }
   }
 }
