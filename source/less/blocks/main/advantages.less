@@ -79,6 +79,23 @@
     top: 6px;
     background-image: url("../img/advantages/icon_arrow.svg");
   }
+
+  &:hover,
+  &:focus {
+    padding-right: 47px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 12px;
+      background-image: url("../img/advantages/arrow_active.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .advantages__wrapper {
@@ -142,6 +159,11 @@
 
     &::after {
       top: 9px;
+    }
+
+    &:hover,
+    &:focus {
+      padding-right: 57px;
     }
   }
 
