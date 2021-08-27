@@ -94,6 +94,7 @@
   color: @basic-black;
   text-transform: uppercase;
   padding: 0;
+  cursor: pointer;
 }
 
 .live__slider {
@@ -287,6 +288,10 @@
     box-shadow: inset 0 0 0 12px @basic-white, inset 0 0 0 16px @basic-green, 0 3px 8px -3px @basic-black;
     cursor: pointer;
     border: 1px solid @border-dashed;
+
+    &:active {
+      border-color: @basic-green;
+    }
   }
 
   .live__was,
@@ -296,6 +301,15 @@
     padding-bottom: 5px;
     border-bottom: 1px solid @special-gray;
     border-bottom-style: dashed;
+
+    &:hover,
+    &:focus {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .live__cat {

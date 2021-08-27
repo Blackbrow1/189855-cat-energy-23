@@ -8,11 +8,35 @@
   padding-bottom: 17px;
 }
 
+.social__icon-fb {
+  fill: none;
+}
+
+.social__icon-vk,
+.social__icon-insta,
+.social__icon-fb {
+  &:hover,
+  &:focus {
+    stroke: @basic-green;
+    stroke-width: 1px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .social {
     padding: 0;
     width: 129px;
     position: relative;
     left: 13px;
+  }
+
+  .social__icon-vk,
+  .social__icon-insta,
+  .social__icon-fb {
+    transform: scale(1.4);
   }
 }
