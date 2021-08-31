@@ -140,10 +140,27 @@
     content: "";
     position: absolute;
     width: 30px;
-    height: 30px;
-    top: -54px;
-    left: 86px;
-    background-image: url("../img/catalog/plus.svg");
+    height: 2px;
+    background-color: @plus-color;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: @plus-color;
+    left: 0;
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  &::before,
+  &::after {
+    top: -40px;
+    left: 87px;
   }
 }
 
@@ -239,10 +256,16 @@
 
     &::before {
       width: 60px;
-      height: 60px;
-      left: 39px;
-      top: -109px;
-      background-image: url("../img/catalog/plus-tablet.svg");
+    }
+
+    &::after {
+      width: 60px;
+    }
+
+    &::after,
+    &::before {
+      top: -78px;
+      left: 40px;
     }
   }
 
@@ -463,8 +486,10 @@
     margin-top: 0;
     margin-bottom: 23px;
 
+    &::after,
     &::before {
-      left: 37px;
+      top: -80px;
+      left: 38px;
     }
   }
 
