@@ -6,6 +6,11 @@
   .clear-list();
 }
 
+.advantages__title-wrap {
+  padding-left: 72px;
+  position: relative;
+}
+
 .advantages__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -21,7 +26,8 @@
       position: absolute;
       width: 50px;
       height: 53px;
-      background-image: url("../img/advantages/cat_back1_mobile.svg");
+      background-image: url("../img/advantages/cat_back1.svg");
+      background-repeat: no-repeat;
       left: 3px;
       top: -8px;
     }
@@ -33,16 +39,12 @@
       position: absolute;
       width: 67px;
       height: 50px;
-      background-image: url("../img/advantages/cat_back2_mobile.svg");
+      background-image: url("../img/advantages/cat_back2.svg");
+      background-repeat: no-repeat;
       left: -6px;
       top: -6px;
     }
   }
-}
-
-.advantages__title-wrap {
-  padding-left: 72px;
-  position: relative;
 }
 
 .advantages__list-item {
@@ -73,23 +75,19 @@
   &::after {
     content: "";
     position: absolute;
-    width: 24px;
+    width: 32px;
     height: 12px;
     right: 0;
     top: 6px;
-    background-image: url("../img/advantages/icon_arrow.svg");
+    background-image: url("../img/advantages/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: -8px 0;
   }
 
   &:hover,
   &:focus {
-    padding-right: 47px;
-
     &::after {
-      content: "";
-      position: absolute;
-      width: 32px;
-      height: 12px;
-      background-image: url("../img/advantages/arrow_active.svg");
+      background-position: 0 0;
     }
   }
 
@@ -129,21 +127,17 @@
 
     &--slim {
       &::before {
-        width: 200px;
-        height: 211px;
-        background-image: url("../img/advantages/cat_back1_tablet.svg");
-        left: 394px;
-        top: 3px;
+        left: 470px;
+        top: 82px;
+        transform: scale(4);
       }
     }
 
     &--pro {
       &::before {
-        width: 268px;
-        height: 200px;
-        background-image: url("../img/advantages/cat_back2_tablet.svg");
-        left: 360px;
-        top: 13px;
+        left: 460px;
+        top: 89px;
+        transform: scale(4);
       }
     }
   }
@@ -159,11 +153,6 @@
 
     &::after {
       top: 9px;
-    }
-
-    &:hover,
-    &:focus {
-      padding-right: 57px;
     }
   }
 
@@ -220,21 +209,17 @@
 
     &--slim {
       &::before {
-        width: 100px;
-        height: 106px;
-        background-image: url("../img/advantages/cat_back1_desktop.svg");
-        left: 0;
-        top: -35px;
+        left: 25px;
+        top: -10px;
+        transform: scale(2);
       }
     }
 
     &--pro {
       &::before {
-        width: 134px;
-        height: 100px;
-        background-image: url("../img/advantages/cat_back2_desktop.svg");
-        left: -19px;
-        top: -30px;
+        left: 15px;
+        top: -7px;
+        transform: scale(2);
       }
     }
   }

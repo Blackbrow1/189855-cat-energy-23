@@ -178,7 +178,8 @@
     top: 0;
     width: 18px;
     height: 14px;
-    background-image: url("../img/form/check_mobile.svg");
+    background-image: url("../img/form/check.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -477,11 +478,9 @@
 
   .order__more-input:checked + span {
     &::after {
-      left: 8px;
+      left: 10px;
       top: 0;
-      width: 24px;
-      height: 19px;
-      background-image: url("../img/form/check_tablet.svg");
+      transform: scale(1.3);
     }
   }
 
