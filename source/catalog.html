@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png">
@@ -369,7 +373,7 @@
             </li>
             <li class="social__item">
               <a href="#">
-                <svg class="social__icon-insta" width="16" height="16" aria-label="Иконка инстаграм">
+                <svg loading="lazy" class="social__icon-insta" width="16" height="16" aria-label="Иконка инстаграм">
                   <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
