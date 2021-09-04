@@ -11,15 +11,24 @@
 .social__icon-fb {
   fill: none;
   stroke: @special-gray-2;
-}
 
-.social__icon-vk,
-.social__icon-insta,
-.social__icon-fb {
   &:hover,
   &:focus {
     stroke: @basic-green;
-    stroke-width: 1px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon-vk,
+.social__icon-insta {
+  fill: @special-gray-2;
+
+  &:hover,
+  &:focus {
+    fill: @basic-green;
   }
 
   &:active {

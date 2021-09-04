@@ -9,16 +9,6 @@
 .advantages__title-wrap {
   padding-left: 72px;
   position: relative;
-}
-
-.advantages__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-family: @font-first;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 37px;
 
   &--slim {
     &::before {
@@ -47,6 +37,16 @@
   }
 }
 
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: @font-first;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+}
+
 .advantages__list-item {
   background-color: @basic-gray;
   padding: 30px 21px 18px 20px;
@@ -67,7 +67,7 @@
   color: @basic-black;
   font-size: 16px;
   line-height: 16px;
-  padding-right: 39px;
+  padding-right: 46px;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -78,7 +78,7 @@
     width: 32px;
     height: 12px;
     right: 0;
-    top: 6px;
+    top: 5px;
     background-image: url("../img/advantages/icon-arrow.svg");
     background-repeat: no-repeat;
     background-position: -8px 0;
@@ -124,22 +124,6 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 24px;
-
-    &--slim {
-      &::before {
-        left: 470px;
-        top: 82px;
-        transform: scale(4);
-      }
-    }
-
-    &--pro {
-      &::before {
-        left: 460px;
-        top: 89px;
-        transform: scale(4);
-      }
-    }
   }
 
   .advantages__text {
@@ -173,6 +157,22 @@
 
   .advantages__title-wrap {
     padding-left: 0;
+
+    &--slim {
+      &::before {
+        left: 470px;
+        top: 82px;
+        transform: scale(4);
+      }
+    }
+
+    &--pro {
+      &::before {
+        left: 460px;
+        top: 89px;
+        transform: scale(4);
+      }
+    }
   }
 }
 
@@ -206,6 +206,10 @@
 
   .advantages__title {
     margin-bottom: 73px;
+  }
+
+  .advantages__title-wrap {
+    padding-left: 162px;
 
     &--slim {
       &::before {
@@ -222,9 +226,5 @@
         transform: scale(2);
       }
     }
-  }
-
-  .advantages__title-wrap {
-    padding-left: 162px;
   }
 }

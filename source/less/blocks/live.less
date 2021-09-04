@@ -115,7 +115,7 @@
 }
 
 .live__bar {
-  width: 40%;
+  width: 50%;
   height: 6px;
   background-color: @basic-green;
   border-radius: 6px;
@@ -136,6 +136,14 @@
   height: 100%;
   overflow: hidden;
   z-index: 2;
+
+  & img {
+    position: absolute;
+    width: 311px;
+    height: 232px;
+    top: 0;
+    left: 0;
+  }
 }
 
 .live__cat-skinny {
@@ -146,22 +154,6 @@
   height: 100%;
   overflow: hidden;
   display: none;
-}
-
-.live__cat-fat img {
-  position: absolute;
-  width: 311px;
-  height: 232px;
-  top: 0;
-  left: 0;
-}
-
-.cat__skinny img {
-  position: absolute;
-  width: 251px;
-  height: 240px;
-  top: 0;
-  right: 54px;
 }
 
 @media (min-width: @tablet-width) {
@@ -285,7 +277,7 @@
     position: absolute;
     left: 47%;
     top: -13px;
-    box-shadow: inset 0 0 0 12px @basic-white, inset 0 0 0 16px @basic-green, 0 3px 8px -3px @basic-black;
+    box-shadow: inset 0 0 0 12px @basic-white, inset 0 0 0 16px @basic-green, 0 0 7px -3px @basic-black;
     cursor: pointer;
     border: 1px solid @border-dashed;
 
@@ -300,7 +292,6 @@
     margin: 0;
     padding-bottom: 5px;
     border-bottom: 1px solid @special-gray;
-    border-bottom-style: dashed;
 
     &:hover,
     &:focus {
@@ -325,6 +316,14 @@
     top: -3px;
     width: 337px;
     height: 100%;
+
+    img {
+      position: absolute;
+      width: 677px;
+      height: 520px;
+      top: 0;
+      left: 0;
+    }
   }
 
   .live__cat-skinny {
@@ -333,22 +332,14 @@
     width: 353px;
     height: 100%;
     display: block;
-  }
 
-  .live__cat-fat img {
-    position: absolute;
-    width: 677px;
-    height: 520px;
-    top: 0;
-    left: 0;
-  }
-
-  .live__cat-skinny img {
-    position: absolute;
-    width: 545px;
-    height: 520px;
-    top: -3px;
-    right: 55px;
+    img {
+      position: absolute;
+      width: 545px;
+      height: 520px;
+      top: -3px;
+      right: 55px;
+    }
   }
 }
 
@@ -477,6 +468,14 @@
     height: 100%;
     overflow: hidden;
     z-index: 2;
+
+    img {
+      width: 677px;
+      height: 520px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   .live__cat-skinny {
@@ -487,21 +486,13 @@
     height: 100%;
     overflow: hidden;
     z-index: 1;
-  }
 
-  .live__cat-fat img {
-    width: 677px;
-    height: 520px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .live__cat-skinny img {
-    width: 545px;
-    height: 520px;
-    position: absolute;
-    top: 0;
-    right: 54px;
+    img {
+      width: 545px;
+      height: 520px;
+      position: absolute;
+      top: 0;
+      right: 54px;
+    }
   }
 }
