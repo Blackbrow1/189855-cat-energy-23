@@ -8,6 +8,14 @@
   margin: 0 auto;
 }
 
+.page-header__button {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 22px;
+}
+
 .page-header__offer-wrap {
   margin: 0 auto;
   margin-top: 138px;
@@ -38,45 +46,41 @@
   background-color: @basic-white;
   cursor: pointer;
   border: none;
-}
 
-.page-header__toggle--open {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: @basic-black;
-    box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
-  }
-}
-
-.page-header__toggle--close {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: @basic-black;
+  &--open {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: @basic-black;
+      box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
+    }
   }
 
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
+  &--close {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: @basic-black;
+    }
 
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
 
-.page-header__nav-container--close {
-  display: none;
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .page-header__toggle--none {
@@ -88,6 +92,10 @@
   background-color: @basic-white;
   position: absolute;
   z-index: 2;
+
+  &--close {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -95,10 +103,10 @@
     position: relative;
     width: 440px;
     background-color: inherit;
-  }
 
-  .page-header__nav-container--close {
-    display: block;
+    &--close {
+      display: block;
+    }
   }
 
   .page-header__offer {
@@ -114,6 +122,14 @@
     width: 174px;
     margin: 0;
     padding: 0;
+  }
+
+  .page-header__button {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 0;
   }
 
   .page-header__container {
@@ -160,22 +176,21 @@
     height: 643px;
     position: relative;
     margin-bottom: 81px;
-    background-size: cover;
+    background-image: linear-gradient(to right, @basic-white 50%, @index-background 50%);
 
     &::after {
       content: "";
       position: absolute;
-      width: 50%;
-      height: 100%;
-      background-size: cover;
+      width: 1043px;
+      height: 696px;
       background-image: url("../img/cat-desktop.jpg");
       background-repeat: no-repeat;
       top: 0;
-      right: 0;
+      left: 50%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/cat-desktop@2x.jpg");
-        background-size: 100% 100%;
+        background-size: 1043px 696px;
       }
     }
   }
