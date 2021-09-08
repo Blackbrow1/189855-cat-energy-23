@@ -13,3 +13,5 @@ menuButton.addEventListener ('click', function (evt) {
     navContainer.classList.add('page-header-noindex__nav-container--close');
   }
 });
+
+navContainer.classList.add('page-header-noindex__nav-container--close');
