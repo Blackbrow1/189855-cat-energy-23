@@ -35,7 +35,7 @@
               </svg>
             </a>
           </div>
-          <button class="page-header-noindex__toggle page-header-noindex__toggle--open" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="page-header-noindex__toggle page-header-noindex__toggle--open page-header-noindex__toggle--none" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
         </div>
       </div>
 
@@ -103,8 +103,8 @@
                     <span>Похудение</span>
                   </label>
 
-                  <label class="choice order__choice order__choice-padding">
-                    <input class="order__program-choice visually-hidden" type="radio" name="program-selection" id="weight-gains" value="weight-gains">
+                  <label class="choice order__choice order__choice-padding choice__disabled">
+                    <input class="order__program-choice visually-hidden" type="radio" name="program-selection" id="weight-gains" value="weight-gains" disabled>
                     <span>Набор массы</span>
                   </label>
 
@@ -156,7 +156,7 @@
             </fieldset>
 
             <fieldset class="order__more">
-                <legend class="title-line order__more-title">Дополнительно</legend>
+              <legend class="title-line order__more-title">Дополнительно</legend>
 
               <div class="order__more-wrap">
                 <label class="choice choice--check order__choice">

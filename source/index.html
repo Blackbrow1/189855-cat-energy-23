@@ -35,7 +35,7 @@
                   </svg>
                 </a>
               </div>
-              <button class="page-header__toggle page-header__toggle--open" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
+              <button class="page-header__toggle page-header__toggle--open page-header__toggle--none" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
             </div>
           </div>
 
@@ -156,20 +156,20 @@
                   <div class="live__cat-fat">
                     <picture>
                       <source media="(min-width: 768px)" srcset="img/cat/cat-fat-desktop.png 1x, img/cat/cat-fat-desktop@2x.png 2x">
-                      <img src="img/cat/cat-fat.png" width="311" height="232" alt="Толстый кот">
+                      <img src="img/cat/cat-fat-mobile.png" srcset="img/cat/cat-fat-mobile@2x.png" width="311" height="232" alt="Толстый кот">
                     </picture>
                   </div>
                   <div class="live__cat-skinny">
                     <picture>
                       <source media="(min-width: 768px)" srcset="img/cat/cat-skinny-desktop.png 1x, img/cat/cat-skinny-desktop@2x.png 2x">
-                      <img src="img/cat/cat-skinny.png" srcset="img/cat/cat-skinny@2x.png" width="251" height="240" alt="Тонкий кот">
+                      <img src="img/cat/cat-skinny-mobile.png" srcset="img/cat/cat-skinny-mobile@2x.png" width="251" height="240" alt="Тонкий кот">
                     </picture>
                   </div>
                 </div>
                 <div class="live__slider">
                   <button class="live__was">Было</button>
                   <div class="live__range-controls">
-                    <div class="live__bar"></div>
+                    <div class="live__bar" aria-label="Ползунок"></div>
                   </div>
                   <button class="live__become">Стало</button>
                 </div>

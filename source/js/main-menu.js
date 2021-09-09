@@ -15,3 +15,5 @@ menuButton.addEventListener ('click', function (evt) {
 });
 
 navContainer.classList.add('page-header__nav-container--close');
+navContainer.classList.add('page-header__nav-container--open');
+menuButton.classList.remove('page-header__toggle--none');

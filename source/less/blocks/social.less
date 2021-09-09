@@ -1,11 +1,16 @@
 .social {
   .clear-list();
-  width: 136px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 17px;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
 }
 
 .social__icon-fb {
@@ -39,9 +44,14 @@
 @media (min-width: @tablet-width) {
   .social {
     padding: 0;
-    width: 129px;
     position: relative;
     left: 13px;
+  }
+
+  .social__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 
   .social__icon-vk,
